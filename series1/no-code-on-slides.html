@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOAST - the talk on a small thing - Nolan Lawson</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <meta name="description" content="How to make a talk without overwhelming the audience with technical details ? Nolan Lawson shares his tips and tricks.">
+
+  <meta property="og:title" content="TOAST - the talk on a small thing - Nolan Lawson">
+  <meta property="og:image" content="http://toast.show/series1/no-code-on-slides.png"/>
+  <meta property="og:description" content="How to make a talk without overwhelming the audience with technical details ? Nolan Lawson shares his tips and tricks.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ToastShow">
+  <meta name="twitter:creator" content="@kosamari">
+  <meta name="twitter:title" conToatent="TOAST - the talk on a small thing - Nolan Lawson">
+  <meta name="twitter:description" content="How to make a talk without overwhelming the audience with technical details ? Nolan Lawson shares his tips and tricks.">
+  <meta name="twitter:image:src" content="http://toast.show/series1/no-code-on-slides.png">
+
+  <meta itemprop="name" content="TOAST - the talk on a small thing - Nolan Lawson">
+  <meta itemprop="description" content="How to make a talk without overwhelming the audience with technical details ? Nolan Lawson shares his tips and tricks.">
+  <meta itemprop="image" content="http://toast.show/series1/no-code-on-slides.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i" rel="stylesheet">
+  <style type="text/css" media="screen">
+    body {
+      font-family: 'Rubik', Arial, sans-serif;
+      max-width:700px;
+      margin-right: auto;
+      margin-left: auto;
+      color: #222;
+      padding:10px;
+    }
+    #toast {
+      display: inline-block;
+      width:90px;
+      height: 80px;
+    }
+    header {
+      text-align: center;
+      padding-bottom:20px;
+    }
+    header > h1 {
+      font-size: 5em;
+      margin:0px;
+      font-weight:450;
+    }
+    header > h1 > a {
+      text-decoration: none;
+      color:#222;
+    }
+    header > h1 > a:hover {
+      text-decoration: underline;
+    }
+    header > p.subtitle {
+      font-size: 1.2em;
+      margin:0.5em;
+    }
+    header > #menu {
+      text-align: right;
+    }
+    a {
+      color:#222;
+    }
+    article > h2 {
+      margin-bottom: 0px;
+      background-color: #222;
+      color:#fff;
+      padding: 10px 15px;
+      font-size: 1.2em;
+    }
+    section {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    section > h3 {
+      font-size: 1.8em;
+      margin-bottom: 0px;
+    }
+    section > h4 {
+      font-size: 1.2em;
+    }
+    section > .right {
+      text-align: right;
+    }
+    section > .pubdate {
+      font-size: 0.9em;
+    }
+    section.notpublished {
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      max-width:600px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    footer > p {
+      font-size: 0.8em;
+      padding-top:20px;
+      padding-bottom:20px;
+    }
+    strong {
+      width:100%;
+      display: inline-block;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+  <def>
+    <symbol id="toast" viewBox="0 0 100 70">
+      <title>toast</title>
+      <g><path fill="#010101" d="M99.78,25.427c-0.796-3.285-2.831-6.293-6.226-9.202c-2.616-2.243-6.144-4.521-11.101-7.162
+    c-0.372-0.199-0.692-0.368-0.997-0.525c-0.296-0.164-0.611-0.333-0.988-0.536c-9.665-5.157-19.047-7.851-27.881-8
+    C52.458,0.001,52.33,0,52.203,0c-4.655,0-9.12,1.416-13.275,4.208c-2.306,1.55-3.964,3.046-5.074,4.577
+    c-1.025,1.415-1.482,2.734-1.62,3.884c-1.747,0.618-4.071,1.727-7.309,3.978c-1.531,1.065-1.541,1.07-2.653,1.842
+    c-1.615,1.122-5.55,3.853-19.792,13.748l-0.03,0.019l-0.028,0.021c-1.812,1.31-2.691,3.268-2.351,5.239l0.068,0.403l0.157,0.379
+    l2.298,5.604l0.025,0.059l0.025,0.062c0.283,0.63,0.918,1.748,2.068,2.479l35.663,25.373l0.167,0.12l0.177,0.098
+    c1.203,0.673,2.464,1.014,3.751,1.014c1.522,0,3.002-0.49,4.278-1.418c19.012-13.819,23.804-17.467,27.355-20.417l0.544-0.453
+    c3.226-2.682,4.312-3.584,5.67-5.234c0.146-0.179,0.28-0.349,0.401-0.515c3.644-0.198,7.945-1.773,11.426-4.209
+    c2.589-1.811,4.324-3.476,5.539-6.626l0.242-0.629l0.007-0.674l0.062-5.826L100,26.991l-0.006-0.116
+    C99.965,26.385,99.894,25.899,99.78,25.427z M3.823,36.764c-0.032-0.473,0.272-0.981,0.837-1.388
+    c14.4-10.002,18.263-12.684,19.844-13.78c1.062-0.739,1.097-0.762,2.604-1.81c4.639-3.226,6.953-3.751,8.643-4.136l0.092-0.021
+    c0.344-0.077,0.54-0.194,0.614-0.365c0.099-0.223-0.042-0.462-0.176-0.693c-0.065-0.118-0.136-0.237-0.167-0.342
+    c-0.562-1.96,1.103-4.264,4.947-6.848C44.572,5.02,48.318,3.823,52.2,3.823c0.105,0,0.213,0,0.322,0.003
+    c8.222,0.139,17.02,2.681,26.147,7.551c0.327,0.175,0.657,0.354,0.986,0.534c0.337,0.172,0.669,0.349,0.997,0.524
+    c2.032,1.084,3.896,2.099,5.575,3.09c3.84,2.269,6.698,4.418,8.318,6.976c0.397,0.629,0.721,1.282,0.965,1.97
+    c0.105,0.298,0.198,0.605,0.272,0.917c0.723,2.976-1.606,7.13-4.169,8.855c-3.862,2.595-7.529,3.858-10.905,3.75
+    c-0.189-0.007-0.404-0.036-0.61-0.062c-0.24-0.033-0.49-0.065-0.715-0.065c-0.291,0-0.697,0.047-0.869,0.451l-0.023,0.06
+    c-0.441,1.041-1.043,2.471-5.849,5.595c-1.111,0.722-1.776,1.196-2.695,1.854c-2.273,1.627-6.507,4.657-24.364,16.274
+    c-0.682,0.427-1.62,0.684-2.51,0.684c-0.595,0-1.121-0.113-1.506-0.318L4.521,37.707c-0.394-0.211-0.634-0.516-0.689-0.864
+    C3.83,36.818,3.825,36.792,3.823,36.764z M6.049,42.483c0.001,0.005,0.002,0.01,0.003,0.012c-0.003-0.007-0.006-0.012-0.006-0.012
+    H6.049z M44.549,69.369c-0.025,0-0.052,0.004-0.078,0.004c-0.011,0-0.021-0.001-0.033-0.001
+    C44.475,69.371,44.512,69.369,44.549,69.369z M81.996,41.356c-0.016,0-0.032,0-0.047,0c-0.019,0-0.035,0-0.055,0
+    C81.927,41.356,81.963,41.356,81.996,41.356z"></path><path fill="#010101" d="M33.538,30.23c0.005,0.033,0.012,0.068,0.018,0.103l0.122,1.189c0.374,1.397,1.267,2.231,2.425,2.926
+    l6.346,3.837c0.854,0.512,1.951,0.795,3.083,0.795c1.257,0,2.456-0.339,3.376-0.951l9.292-6.696
+    c1.153-0.771,1.656-1.897,1.647-3.315l-0.01-0.374c0.026-0.197,0.032-0.394,0.018-0.596c-0.006-0.083-0.018-0.166-0.03-0.247
+    c-0.174-1.066-0.922-1.977-2.093-2.519l-7.628-3.543c-0.775-0.361-1.711-0.55-2.704-0.55c-1.374,0-2.726,0.367-3.711,1.011
+    l-8.443,5.505c-1.128,0.735-1.762,1.831-1.744,3.006l0,0v0.001c0,0.005,0,0.008,0,0.012C33.505,29.958,33.518,30.095,33.538,30.23z
+     M35.988,28.576c0.086-0.071,0.174-0.143,0.278-0.209l8.442-5.507c0.712-0.465,1.716-0.708,2.692-0.708
+    c0.692,0,1.372,0.124,1.92,0.378l7.629,3.543c0.585,0.272,0.926,0.652,1.021,1.061v0.001c0.12,0.513-0.151,1.07-0.824,1.518
+    l-9.639,6.429c-0.636,0.425-1.492,0.641-2.343,0.641c-0.77,0-1.533-0.176-2.126-0.532l-6.717-4.023
+    c-0.537-0.32-0.847-0.738-0.929-1.174C35.3,29.507,35.5,28.998,35.988,28.576z"></path></g>
+    </symbol>
+  </def>
+</svg>
+  <header id="header" class="">
+    <p id="menu"><a href="https://pcr.apple.com/id1155000387" title="rss feed link">RSS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://itunes.apple.com/us/podcast/toast-the-talk-on-a-small-thing/id1155000387" title="iTunes page link">iTunes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/ToastShow" title="twitter link">Twitter</a></p>
+    <svg id="toast"><use xlink:href="#toast"></use></svg>
+    <h1><a href="/" title="move to top page">TOAST</a></h1>
+    <p id="subtitle">- the Talk on a Small Thing -</p>
+  </header>
+  <article class="series">
+    <h2>Series 1: Speaking</h2>
+    <section>
+      <h3>Ep 2: No Code on Slides - Nolan Lawson</h3>
+      <p>How to make a talk without overwhelming the audience with technical details ? Nolan Lawson shares his tips and tricks.</p>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284050697%3Fsecret_token%3Ds-ojvBw&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+      <h4>Show Notes</h4>
+      <ul>
+        <li><a href="https://twitter.com/nolanlawson">Nolan Lawson (@nolanlawson)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=F32zw1CvZpM">[video] Front End Data Panel- Edge Conference 2015</a></li>
+        <li><a href="https://www.youtube.com/watch?v=OgLemdR65pE">[video] Demystifying Web Workers and Service Workers, Nolan Lawson - CascadiaFest 2016</a></li>
+        <li><a href="https://github.com/hakimel/reveal.js/">revel.js</a></li>
+        <li><a href="https://www.ffmpeg.org/">FFmpeg</a></li>
+        <li><a href="https://nolanlawson.com/">[blog] Read the Tea Leaves | Software and other dark arts, by Nolan Lawson</a></li>
+      </ul>
+      <ul>
+        <li>Follow us on twitter for updates <a href="https://twitter.com/ToastShow" title="">@ToastShow</a>.</li>
+        <li>This show is produced, written, and edited by <a href="https://twitter.com/kosamari" title="">@kosamari</a></li>
+      </ul>
+      <h4>Transcript</h4>
+      <p><strong>[0:00] (Mariko)</strong>
+      This episode is dedicated for Nolan Lawson fan club.</p>
+
+      <p><strong>[0:10] (Mariko)</strong>
+      Welcome back to the TOAST ! In this episode, I traveled to Seattle to meet up with my friend Nolan Lawson. Nolan is a Program Manager for Microsoft Edge and maintainer of open source libraries such as PouchDB. Before moving to Seattle, he was a regular speaker at JavaScript meetups in NY. I always thought speaking was something he's been doing for long time, but I found out he started speaking when he moved to New York 2 years ago.
+      </p>
+      <p><strong>[0:38] (Nolan)</strong>
+      Well, I remember what happened was that I moved to New York and I didn't know anybody, and my first thought when moving... I moved around a lot and so whenever I moved to a new city my first thought is, "Okay, I'll go on meetup.com and I'll find some nice meetups with people who have similar interests to me and I'll go hangout with them." And I landed and I looked up meetup.com and I just typed in JavaScript, and what immediately came up was the plethora of options that we have in New York City, like QueensJS and JerseyScript and BrooklynJS, and I saw there was a lot of hubbub on Twitter about these events, so I was like, "Ah, I wanna go to one of these." So, I went to QueensJS. I think I actually went to the first Queens JS ever, just as an attendee, and I loved it. It was amazing. And so the week after that, I went went to JerseyScript and I applied to be a speaker and they let me speak.
+      </p>
+      <p><strong>[1:28] (Mariko)</strong>
+      Nolan is a very active member of open source community, his 1st invitation to a conference was through he's work in open source.
+      </p>
+      <p><strong>[1:35] (Nolan)</strong>
+      My first conference talk, I think, was Edge Conference in 2015. It's a conference about cutting web technologies.  It's where people goes to discuss polyfills and upcoming browser APIs. I went there as an independent developer at the time. What they did was they just got together, basically all the major indexedDb polyfill authors, and got us all together in a room. It was just really neat to get us all up on stage and talk about IndexedDB and browser storage.
+      </p>
+      <p><strong>[2:06] (Mariko)</strong>
+      One thing I really like about Nolan's presentation is that he is really good at explaining technical concepts on stage. I often get lost watching conference talk. I don't know if this ever happen to you, but that monument you are sitting in a conference room and thinking "This sounds really cool but I don't know what I am looking at" Nolan's talk doesn't do that. He says the speaker should care more about experience of the audience.
+      </p>
+      <p><strong>[2:34] (Nolan)</strong>
+      I think a lot of people make mistakes when making presentations that they pack too much detail on it, just way too much detail. And I think what that stems from is it stems from the difference between the experience of writing a presentation versus the experience of watching a presentation. So when you're writing it, you have the laptop screen right in front your face and you can see high resolution and it's nice and quiet usually when you're working on it so you're focused, and you feel like it's okay to put a lot of detail on this page, but then the problem is then that gets blown up on a gigantic screen, it maybe dark, maybe the resolution isn't so great, and then now it's a totally different experience then when you were authoring it. So you have to keep that user experience in mind as you're building it. It's actually very similar to building a web page.
+      </p>
+      <p><strong>[3:20] (Mariko)</strong>
+      When thinking about how much information to put on a slide, Nolan has strong policy about how much code to be shown on a screen.
+      </p>
+      <p><strong>[3:29] (Nolan)</strong>
+      Well, I guess I just kinda realized that when I thought about what kind of technical talks I enjoyed, myself, it wasn't the ones where there was 20 lines of code up on the screen and the speaker just kinda walked through it step-by-step. I don't think that's the right format for that. Especially with the meetups and conferences I would go to in NY, often times it would be at a bar, it would be dark and maybe I'll sitting at back of the room, and I'll only be able to see top half of the screen. So it doesn't make sense to put 20 lines of code up on the screen. So my personal policy is I might put up three lines of code in gigantic font and I don't expect the audience to read it, because I would hope that the content of the talk would be the... The content of what I'm actually saying would be the the thing they'd focus on, not necessarily the slides.
+      </p>
+      <p><strong>[4:21] (Mariko)</strong>
+      The meetup at a bar where only half of slide is visible is the meetup I organize called BrooklynJS. It probably is the least professional venue for technical talk.
+      </p>
+      <p><strong>[4:31] (Nolan)</strong>
+      It's actually good because it forces you to use a lot of discipline when you're building your slides for BrooklynJS. You really have to make sure that the content of the talk can carry it, that you don't even need the slides, and that also you're putting the important stuff in the center of the slides and you're not putting some important detail in the very, very bottom.
+      </p>
+      <p><strong>[4:52] (Mariko)</strong>
+      Nolan makes his slides in browser, using HTML CSS and JavaScript. He even give a talk in a t-shirt that says "the team web". I also make slides in browser because it was really easy for me to embed demos.
+      </p>
+      <p><strong>[5:06] (Nolan)</strong>
+      I decided to do it out of principle. It's like, "We build for the web. Let's build our presentations on the web". I love the way you do it too, you built your own presentation software right? your own framework.<br><br>
+      <strong>(Mariko)</strong>
+      Yeah. Maybe not the clever idea, but...<br><br>
+      <strong>(Nolan)</strong>
+      No, your slides are amazing and they always have great interactivity. You always really milk the browser when you do presentations. You do the kind of presentations that you could not do outside of the browser, and that's what I really like to see whether you're making your own JavaScript framework for presentations or if you're just use reveal.js, like actually having interactive demos, having Codepens inside of there, doing some tricky CSS animations or SVG animations or something. That's what the web is good at, it's perfect for doing presentations.
+      </p>
+      <p><strong>[5:50] (Mariko)</strong>
+      So when we are building slides in browser, is there anything we should keep in mind?
+      </p>
+      <p><strong>[5:56] (Nolan)</strong>
+      There's something that I feel really strongly about, which is funny that I don't see a lot of other presenters doing, which is that we have these presentations where we'll have like a reveal.js presentation where one slide will have a beautiful h1/h2 tag with really crisp text, and then they go to the next slide and suddenly it's a full bleed GIF and that GIF is horrible resolution and really chunky and low frame rate and looks ugly but it's blown up to full size. And then when you look at the presentation on the web, you're downloading this 3 mega byte GIF that looks ugly. And I feel like you should be using HTML5 video for that, 'cause you can make really high resolution videos, high frame rate videos, and it's super easy to do. On a Mac you can just use QuickTime to take a screen recording and then convert that with something like FFmpeg to MP4 or WebM, and then it looks beautiful when you're giving a presentation and it's also a smaller file size when people download it after the conference. The ugliest GIF you've ever seen is bigger in file size then the most beautiful MP4 or WebM you can imagine. It's enormous.
+      <br><br>
+      On Mac I would use QuickTime, on Windows I use... This is a little trick for Windows, is that you can actually use the Xbox app to screen record any other app. All you have to do is you have to open it up and you hit windows G and then says, "Is this a video game?" And you just check the little box that says yes, and then you can video record anything. And then at the end of this you get a video that if you convert with FFmpeg to MP4, 'cause in the case of QuickTime, you have to convert from MOV to MP4 or WebM. You can do this with FFmpeg on a command line. I actually have my dot files repository on GitHub actually has the scripts I use for this, if anybody wants to borrow it.
+      </p>
+      <p><strong>[7:45] (Mariko)</strong>
+      It's clear Nolan put a lot of effort into his slide but he also spends a lot of time thinking about content for the talk. Making material to teach someone is really difficult and some thing I'm still learning. I wonder if there is anyway we can practice for it?
+      </p>
+      <p><strong>[8:01] (Nolan)</strong>
+      Yeah, I would say the best way to start is to write a lot. I actually find that's the most important thing to do. I started a blog like five, six years ago and I never got a lot of traffic, in the beginning, but it gave me a way to understand my own thinking inside of my head because I was forced to actually put it down on the page. And then that gave me ideas that then fed into other blog posts that then that fed into, "Oh there's this interesting open source project" and it solves this problem that I've been thinking about and maybe I want to contribute to it. And then, that would feed into other ideas and then I would end up writing blog posts for the PouchDB blog or on my personal blog or now hopefully soon the Microsoft Edge Dev blog. I think it's just a really good idea to just think about what problems you're running into in your day-to-day life as a software developer and then think about what learnings you would like to pass on to someone else if they were in your shoes. Like what you'd like to tell yourself two years ago. Like you'd wanna go back in time, in a time machine and grab yourself by the shoulders and say, "Don't do this thing. Do this other thing" and whatever that is, whatever you're passionate about, write a blog post about that. Because if you can write a blog post about it, you can do a talk about it. 
+      </p>
+      <p><strong>[9:10] (Mariko)</strong>
+      Understand your own thinking by writing it down, and pass on learnings to someone. I think, I Nolan passed me some leanings about writing a talk.<br><br>
+      Next week, I'm talking to Justin Falcone, he is a speaker who does this unique talk that is almost a performance art.</p>
+      <p><strong>[9:28] (Justin)</strong>
+      I think a lot of people who do talks...they've been doing tech for while and they see talks and see "oh that's something I connect with". I actually kinda came from the opposite direction where I started with talks and then got into tech from there.<br><br>
+      I'm not an educator, I'm much more of a... I don't know... I'm much more of an entertainer.
+      </p>
+      <p><strong>[9:59] (Mariko)</strong>
+      TOAST is written, produced, and edited by me. Thank you Nolan for sitting down with me. And thank you for coming back for second episode.<br><br>
+      By the way the show is on iTunes now, so if you like it, please rate and maybe write a comment.
+      </p>
+    </section>
+  </article>
+  <footer>
+    <p>TOAST episodes and site content are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+  </footer>
+</body>
+</html>
